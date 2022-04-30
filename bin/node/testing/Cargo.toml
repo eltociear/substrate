@@ -14,38 +14,38 @@ targets = ['x86_64-unknown-linux-gnu']
 
 [dependencies]
 codec = { package = 'parity-scale-codec', version = '3.0.0' }
-frame-system = { version = '4.0.0-dev', path = '../../../frame/system' }
+frame-system = { path = '../../../frame/system', version = '4.0.0-dev' }
 fs_extra = '1'
 futures = '0.3.21'
 log = '0.4.16'
-node-executor = { version = '3.0.0-dev', path = '../executor' }
-node-primitives = { version = '2.0.0', path = '../primitives' }
-node-runtime = { version = '3.0.0-dev', path = '../runtime' }
-pallet-asset-tx-payment = { version = '4.0.0-dev', path = '../../../frame/transaction-payment/asset-tx-payment/' }
-pallet-transaction-payment = { version = '4.0.0-dev', path = '../../../frame/transaction-payment' }
-sc-block-builder = { version = '0.10.0-dev', path = '../../../client/block-builder' }
-sc-client-api = { version = '4.0.0-dev', path = '../../../client/api/' }
-sc-client-db = { version = '0.10.0-dev', path = '../../../client/db/', features = [
+node-executor = { path = '../executor', version = '3.0.0-dev' }
+node-primitives = { path = '../primitives', version = '2.0.0' }
+node-runtime = { path = '../runtime', version = '3.0.0-dev' }
+pallet-asset-tx-payment = { path = '../../../frame/transaction-payment/asset-tx-payment/', version = '4.0.0-dev' }
+pallet-transaction-payment = { path = '../../../frame/transaction-payment', version = '4.0.0-dev' }
+sc-block-builder = { path = '../../../client/block-builder', version = '0.10.0-dev' }
+sc-client-api = { path = '../../../client/api/', version = '4.0.0-dev' }
+sc-client-db = { features = [
 	'kvdb-rocksdb',
 	'parity-db',
-] }
-sc-consensus = { version = '0.10.0-dev', path = '../../../client/consensus/common' }
-sc-executor = { version = '0.10.0-dev', path = '../../../client/executor', features = [
+], path = '../../../client/db/', version = '0.10.0-dev' }
+sc-consensus = { path = '../../../client/consensus/common', version = '0.10.0-dev' }
+sc-executor = { features = [
 	'wasmtime',
-] }
-sc-service = { version = '0.10.0-dev', features = [
+], path = '../../../client/executor', version = '0.10.0-dev' }
+sc-service = { features = [
 	'test-helpers',
 	'db',
-], path = '../../../client/service' }
-sp-api = { version = '4.0.0-dev', path = '../../../primitives/api' }
-sp-block-builder = { version = '4.0.0-dev', path = '../../../primitives/block-builder' }
-sp-blockchain = { version = '4.0.0-dev', path = '../../../primitives/blockchain' }
-sp-consensus = { version = '0.10.0-dev', path = '../../../primitives/consensus/common' }
-sp-core = { version = '6.0.0', path = '../../../primitives/core' }
-sp-inherents = { version = '4.0.0-dev', path = '../../../primitives/inherents' }
-sp-io = { version = '6.0.0', path = '../../../primitives/io' }
-sp-keyring = { version = '6.0.0', path = '../../../primitives/keyring' }
-sp-runtime = { version = '6.0.0', path = '../../../primitives/runtime' }
-sp-timestamp = { version = '4.0.0-dev', default-features = false, path = '../../../primitives/timestamp' }
-substrate-test-client = { version = '2.0.0', path = '../../../test-utils/client' }
+], path = '../../../client/service', version = '0.10.0-dev' }
+sp-api = { path = '../../../primitives/api', version = '4.0.0-dev' }
+sp-block-builder = { path = '../../../primitives/block-builder', version = '4.0.0-dev' }
+sp-blockchain = { path = '../../../primitives/blockchain', version = '4.0.0-dev' }
+sp-consensus = { path = '../../../primitives/consensus/common', version = '0.10.0-dev' }
+sp-core = { path = '../../../primitives/core', version = '6.0.0' }
+sp-inherents = { path = '../../../primitives/inherents', version = '4.0.0-dev' }
+sp-io = { path = '../../../primitives/io', version = '6.0.0' }
+sp-keyring = { path = '../../../primitives/keyring', version = '6.0.0' }
+sp-runtime = { path = '../../../primitives/runtime', version = '6.0.0' }
+sp-timestamp = { default-features = false, path = '../../../primitives/timestamp', version = '4.0.0-dev' }
+substrate-test-client = { path = '../../../test-utils/client', version = '2.0.0' }
 tempfile = '3.1.0'

@@ -24,5 +24,3 @@ syn = '1.0.82'
 default = [ 'std' ]
 std = []
 force-debug = []
-
-[dev-dependencies]

@@ -31,59 +31,59 @@ required-features = ['cli']
 crate-type = ['cdylib', 'rlib']
 
 [dependencies]
-clap = { version = '3.1.6', features = ['derive'], optional = true }
+clap = { features = ['derive'], optional = true, version = '3.1.6' }
 codec = { package = 'parity-scale-codec', version = '3.0.0' }
-frame-benchmarking-cli = { version = '4.0.0-dev', optional = true, path = '../../../utils/frame/benchmarking-cli' }
-frame-system = { version = '4.0.0-dev', path = '../../../frame/system' }
-frame-system-rpc-runtime-api = { version = '4.0.0-dev', path = '../../../frame/system/rpc/runtime-api' }
+frame-benchmarking-cli = { optional = true, path = '../../../utils/frame/benchmarking-cli', version = '4.0.0-dev' }
+frame-system = { path = '../../../frame/system', version = '4.0.0-dev' }
+frame-system-rpc-runtime-api = { path = '../../../frame/system/rpc/runtime-api', version = '4.0.0-dev' }
 futures = '0.3.21'
-grandpa = { version = '0.10.0-dev', package = 'sc-finality-grandpa', path = '../../../client/finality-grandpa' }
-grandpa-primitives = { version = '4.0.0-dev', package = 'sp-finality-grandpa', path = '../../../primitives/finality-grandpa' }
+grandpa = { package = 'sc-finality-grandpa', path = '../../../client/finality-grandpa', version = '0.10.0-dev' }
+grandpa-primitives = { package = 'sp-finality-grandpa', path = '../../../primitives/finality-grandpa', version = '4.0.0-dev' }
 hex-literal = '0.3.4'
 log = '0.4.16'
-node-executor = { version = '3.0.0-dev', path = '../executor' }
-node-inspect = { version = '0.9.0-dev', optional = true, path = '../inspect' }
-node-primitives = { version = '2.0.0', path = '../primitives' }
-node-rpc = { version = '3.0.0-dev', path = '../rpc' }
-node-runtime = { version = '3.0.0-dev', path = '../runtime' }
-pallet-asset-tx-payment = { version = '4.0.0-dev', path = '../../../frame/transaction-payment/asset-tx-payment/' }
-pallet-im-online = { version = '4.0.0-dev', default-features = false, path = '../../../frame/im-online' }
-pallet-transaction-payment = { version = '4.0.0-dev', path = '../../../frame/transaction-payment' }
+node-executor = { path = '../executor', version = '3.0.0-dev' }
+node-inspect = { optional = true, path = '../inspect', version = '0.9.0-dev' }
+node-primitives = { path = '../primitives', version = '2.0.0' }
+node-rpc = { path = '../rpc', version = '3.0.0-dev' }
+node-runtime = { path = '../runtime', version = '3.0.0-dev' }
+pallet-asset-tx-payment = { path = '../../../frame/transaction-payment/asset-tx-payment/', version = '4.0.0-dev' }
+pallet-im-online = { default-features = false, path = '../../../frame/im-online', version = '4.0.0-dev' }
+pallet-transaction-payment = { path = '../../../frame/transaction-payment', version = '4.0.0-dev' }
 rand = '0.8'
-sc-authority-discovery = { version = '0.10.0-dev', path = '../../../client/authority-discovery' }
-sc-basic-authorship = { version = '0.10.0-dev', path = '../../../client/basic-authorship' }
-sc-chain-spec = { version = '4.0.0-dev', path = '../../../client/chain-spec' }
-sc-cli = { version = '0.10.0-dev', optional = true, path = '../../../client/cli' }
-sc-client-api = { version = '4.0.0-dev', path = '../../../client/api' }
-sc-consensus = { version = '0.10.0-dev', path = '../../../client/consensus/common' }
-sc-consensus-babe = { version = '0.10.0-dev', path = '../../../client/consensus/babe' }
-sc-consensus-slots = { version = '0.10.0-dev', path = '../../../client/consensus/slots' }
-sc-consensus-uncles = { version = '0.10.0-dev', path = '../../../client/consensus/uncles' }
-sc-executor = { version = '0.10.0-dev', path = '../../../client/executor' }
-sc-network = { version = '0.10.0-dev', path = '../../../client/network' }
-sc-rpc = { version = '4.0.0-dev', path = '../../../client/rpc' }
-sc-service = { version = '0.10.0-dev', default-features = false, path = '../../../client/service' }
-sc-sync-state-rpc = { version = '0.10.0-dev', path = '../../../client/sync-state-rpc' }
-sc-sysinfo = { version = '6.0.0-dev', path = '../../../client/sysinfo' }
-sc-telemetry = { version = '4.0.0-dev', path = '../../../client/telemetry' }
-sc-transaction-pool = { version = '4.0.0-dev', path = '../../../client/transaction-pool' }
-sc-transaction-pool-api = { version = '4.0.0-dev', path = '../../../client/transaction-pool/api' }
-serde = { version = '1.0.136', features = ['derive'] }
+sc-authority-discovery = { path = '../../../client/authority-discovery', version = '0.10.0-dev' }
+sc-basic-authorship = { path = '../../../client/basic-authorship', version = '0.10.0-dev' }
+sc-chain-spec = { path = '../../../client/chain-spec', version = '4.0.0-dev' }
+sc-cli = { optional = true, path = '../../../client/cli', version = '0.10.0-dev' }
+sc-client-api = { path = '../../../client/api', version = '4.0.0-dev' }
+sc-consensus = { path = '../../../client/consensus/common', version = '0.10.0-dev' }
+sc-consensus-babe = { path = '../../../client/consensus/babe', version = '0.10.0-dev' }
+sc-consensus-slots = { path = '../../../client/consensus/slots', version = '0.10.0-dev' }
+sc-consensus-uncles = { path = '../../../client/consensus/uncles', version = '0.10.0-dev' }
+sc-executor = { path = '../../../client/executor', version = '0.10.0-dev' }
+sc-network = { path = '../../../client/network', version = '0.10.0-dev' }
+sc-rpc = { path = '../../../client/rpc', version = '4.0.0-dev' }
+sc-service = { default-features = false, path = '../../../client/service', version = '0.10.0-dev' }
+sc-sync-state-rpc = { path = '../../../client/sync-state-rpc', version = '0.10.0-dev' }
+sc-sysinfo = { path = '../../../client/sysinfo', version = '6.0.0-dev' }
+sc-telemetry = { path = '../../../client/telemetry', version = '4.0.0-dev' }
+sc-transaction-pool = { path = '../../../client/transaction-pool', version = '4.0.0-dev' }
+sc-transaction-pool-api = { path = '../../../client/transaction-pool/api', version = '4.0.0-dev' }
+serde = { features = ['derive'], version = '1.0.136' }
 serde_json = '1.0.79'
-sp-api = { version = '4.0.0-dev', path = '../../../primitives/api' }
-sp-authority-discovery = { version = '4.0.0-dev', path = '../../../primitives/authority-discovery' }
-sp-authorship = { version = '4.0.0-dev', path = '../../../primitives/authorship' }
-sp-consensus = { version = '0.10.0-dev', path = '../../../primitives/consensus/common' }
-sp-consensus-babe = { version = '0.10.0-dev', path = '../../../primitives/consensus/babe' }
-sp-core = { version = '6.0.0', path = '../../../primitives/core' }
-sp-inherents = { version = '4.0.0-dev', path = '../../../primitives/inherents' }
-sp-keyring = { version = '6.0.0', path = '../../../primitives/keyring' }
-sp-keystore = { version = '0.12.0', path = '../../../primitives/keystore' }
-sp-runtime = { version = '6.0.0', path = '../../../primitives/runtime' }
-sp-timestamp = { version = '4.0.0-dev', path = '../../../primitives/timestamp' }
-sp-transaction-pool = { version = '4.0.0-dev', path = '../../../primitives/transaction-pool' }
-sp-transaction-storage-proof = { version = '4.0.0-dev', path = '../../../primitives/transaction-storage-proof' }
-try-runtime-cli = { version = '0.10.0-dev', optional = true, path = '../../../utils/frame/try-runtime/cli' }
+sp-api = { path = '../../../primitives/api', version = '4.0.0-dev' }
+sp-authority-discovery = { path = '../../../primitives/authority-discovery', version = '4.0.0-dev' }
+sp-authorship = { path = '../../../primitives/authorship', version = '4.0.0-dev' }
+sp-consensus = { path = '../../../primitives/consensus/common', version = '0.10.0-dev' }
+sp-consensus-babe = { path = '../../../primitives/consensus/babe', version = '0.10.0-dev' }
+sp-core = { path = '../../../primitives/core', version = '6.0.0' }
+sp-inherents = { path = '../../../primitives/inherents', version = '4.0.0-dev' }
+sp-keyring = { path = '../../../primitives/keyring', version = '6.0.0' }
+sp-keystore = { path = '../../../primitives/keystore', version = '0.12.0' }
+sp-runtime = { path = '../../../primitives/runtime', version = '6.0.0' }
+sp-timestamp = { path = '../../../primitives/timestamp', version = '4.0.0-dev' }
+sp-transaction-pool = { path = '../../../primitives/transaction-pool', version = '4.0.0-dev' }
+sp-transaction-storage-proof = { path = '../../../primitives/transaction-storage-proof', version = '4.0.0-dev' }
+try-runtime-cli = { optional = true, path = '../../../utils/frame/try-runtime/cli', version = '0.10.0-dev' }
 
 [target.'cfg(any(target_arch="x86_64", target_arch="aarch64"))'.dependencies]
 node-executor = { version = '3.0.0-dev', path = '../executor', features = ['wasmtime'] }
@@ -97,27 +97,27 @@ sp-trie = { version = '6.0.0', default-features = false, path = '../../../primit
 
 [dev-dependencies]
 assert_cmd = '2.0.2'
-async-std = { version = '1.11.0', features = ['attributes'] }
-criterion = { version = '0.3.5', features = ['async_tokio'] }
+async-std = { features = ['attributes'], version = '1.11.0' }
+criterion = { features = ['async_tokio'], version = '0.3.5' }
 futures = '0.3.21'
 nix = '0.23'
-pallet-timestamp = { version = '4.0.0-dev', path = '../../../frame/timestamp' }
+pallet-timestamp = { path = '../../../frame/timestamp', version = '4.0.0-dev' }
 platforms = '2.0'
 regex = '1.5.5'
 remote-externalities = { path = '../../../utils/frame/remote-externalities' }
-sc-block-builder = { version = '0.10.0-dev', path = '../../../client/block-builder' }
-sc-client-db = { version = '0.10.0-dev', path = '../../../client/db' }
-sc-consensus = { version = '0.10.0-dev', path = '../../../client/consensus/common' }
-sc-consensus-babe = { version = '0.10.0-dev', path = '../../../client/consensus/babe' }
-sc-consensus-epochs = { version = '0.10.0-dev', path = '../../../client/consensus/epochs' }
-sc-keystore = { version = '4.0.0-dev', path = '../../../client/keystore' }
-sc-service-test = { version = '2.0.0', path = '../../../client/service/test' }
+sc-block-builder = { path = '../../../client/block-builder', version = '0.10.0-dev' }
+sc-client-db = { path = '../../../client/db', version = '0.10.0-dev' }
+sc-consensus = { path = '../../../client/consensus/common', version = '0.10.0-dev' }
+sc-consensus-babe = { path = '../../../client/consensus/babe', version = '0.10.0-dev' }
+sc-consensus-epochs = { path = '../../../client/consensus/epochs', version = '0.10.0-dev' }
+sc-keystore = { path = '../../../client/keystore', version = '4.0.0-dev' }
+sc-service-test = { path = '../../../client/service/test', version = '2.0.0' }
 serde_json = '1.0'
 soketto = '0.7.1'
-sp-blockchain = { version = '4.0.0-dev', path = '../../../primitives/blockchain' }
-sp-tracing = { version = '5.0.0', path = '../../../primitives/tracing' }
+sp-blockchain = { path = '../../../primitives/blockchain', version = '4.0.0-dev' }
+sp-tracing = { path = '../../../primitives/tracing', version = '5.0.0' }
 tempfile = '3.1.0'
-tokio = { version = '1.17.0', features = ['macros', 'time', 'parking_lot'] }
+tokio = { features = ['macros', 'time', 'parking_lot'], version = '1.17.0' }
 wait-timeout = '0.2'
 
 [build-dependencies]

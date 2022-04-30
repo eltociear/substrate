@@ -11,10 +11,10 @@ readme = 'README.md'
 
 [dependencies]
 chrono = { version = '0.4.19' }
-frame-election-provider-support = { version = '4.0.0-dev', path = '../../../frame/election-provider-support', features = ['runtime-benchmarks'] }
-frame-support = { version = '4.0.0-dev', path = '../../../frame/support' }
-frame-system = { version = '4.0.0-dev', path = '../../../frame/system' }
-git2 = { version = '0.13.25', default-features = false }
+frame-election-provider-support = { features = ['runtime-benchmarks'], path = '../../../frame/election-provider-support', version = '4.0.0-dev' }
+frame-support = { path = '../../../frame/support', version = '4.0.0-dev' }
+frame-system = { path = '../../../frame/system', version = '4.0.0-dev' }
+git2 = { default-features = false, version = '0.13.25' }
 num-format = { version = '0.4.0' }
-pallet-staking = { version = '4.0.0-dev', path = '../../../frame/staking' }
-sp-io = { version = '6.0.0', path = '../../../primitives/io' }
+pallet-staking = { path = '../../../frame/staking', version = '4.0.0-dev' }
+sp-io = { path = '../../../primitives/io', version = '6.0.0' }

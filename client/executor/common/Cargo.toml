@@ -16,14 +16,14 @@ targets = ['x86_64-unknown-linux-gnu']
 [dependencies]
 codec = { package = 'parity-scale-codec', version = '3.0.0' }
 environmental = '1.1.3'
-sc-allocator = { version = '4.1.0-dev', path = '../../allocator' }
-sp-maybe-compressed-blob = { version = '4.1.0-dev', path = '../../../primitives/maybe-compressed-blob' }
-sp-sandbox = { version = '0.10.0-dev', path = '../../../primitives/sandbox' }
-sp-serializer = { version = '4.0.0-dev', path = '../../../primitives/serializer' }
-sp-wasm-interface = { version = '6.0.0', path = '../../../primitives/wasm-interface' }
+sc-allocator = { path = '../../allocator', version = '4.1.0-dev' }
+sp-maybe-compressed-blob = { path = '../../../primitives/maybe-compressed-blob', version = '4.1.0-dev' }
+sp-sandbox = { path = '../../../primitives/sandbox', version = '0.10.0-dev' }
+sp-serializer = { path = '../../../primitives/serializer', version = '4.0.0-dev' }
+sp-wasm-interface = { path = '../../../primitives/wasm-interface', version = '6.0.0' }
 thiserror = '1.0.30'
 wasm-instrument = '0.1'
-wasmer = { version = '2.2', features = ['singlepass'], optional = true }
+wasmer = { features = ['singlepass'], optional = true, version = '2.2' }
 wasmi = '0.9.1'
 
 [features]

@@ -13,33 +13,33 @@ targets = ['x86_64-unknown-linux-gnu']
 
 [dependencies]
 codec = { package = 'parity-scale-codec', version = '3.0.0' }
-frame-benchmarking = { version = '4.0.0-dev', path = '../../../frame/benchmarking' }
-node-primitives = { version = '2.0.0', path = '../primitives' }
-node-runtime = { version = '3.0.0-dev', path = '../runtime' }
-sc-executor = { version = '0.10.0-dev', path = '../../../client/executor' }
-scale-info = { version = '2.0.1', features = ['derive'] }
-sp-core = { version = '6.0.0', path = '../../../primitives/core' }
-sp-keystore = { version = '0.12.0', path = '../../../primitives/keystore' }
-sp-state-machine = { version = '0.12.0', path = '../../../primitives/state-machine' }
-sp-tracing = { version = '5.0.0', path = '../../../primitives/tracing' }
-sp-trie = { version = '6.0.0', path = '../../../primitives/trie' }
+frame-benchmarking = { path = '../../../frame/benchmarking', version = '4.0.0-dev' }
+node-primitives = { path = '../primitives', version = '2.0.0' }
+node-runtime = { path = '../runtime', version = '3.0.0-dev' }
+sc-executor = { path = '../../../client/executor', version = '0.10.0-dev' }
+scale-info = { features = ['derive'], version = '2.0.1' }
+sp-core = { path = '../../../primitives/core', version = '6.0.0' }
+sp-keystore = { path = '../../../primitives/keystore', version = '0.12.0' }
+sp-state-machine = { path = '../../../primitives/state-machine', version = '0.12.0' }
+sp-tracing = { path = '../../../primitives/tracing', version = '5.0.0' }
+sp-trie = { path = '../../../primitives/trie', version = '6.0.0' }
 
 [dev-dependencies]
 criterion = '0.3.0'
-frame-support = { version = '4.0.0-dev', path = '../../../frame/support' }
-frame-system = { version = '4.0.0-dev', path = '../../../frame/system' }
+frame-support = { path = '../../../frame/support', version = '4.0.0-dev' }
+frame-system = { path = '../../../frame/system', version = '4.0.0-dev' }
 futures = '0.3.21'
-node-testing = { version = '3.0.0-dev', path = '../testing' }
-pallet-balances = { version = '4.0.0-dev', path = '../../../frame/balances' }
-pallet-contracts = { version = '4.0.0-dev', path = '../../../frame/contracts' }
-pallet-im-online = { version = '4.0.0-dev', path = '../../../frame/im-online' }
-pallet-timestamp = { version = '4.0.0-dev', path = '../../../frame/timestamp' }
-pallet-treasury = { version = '4.0.0-dev', path = '../../../frame/treasury' }
-sp-application-crypto = { version = '6.0.0', path = '../../../primitives/application-crypto' }
-sp-consensus-babe = { version = '0.10.0-dev', path = '../../../primitives/consensus/babe' }
-sp-externalities = { version = '0.12.0', path = '../../../primitives/externalities' }
-sp-keyring = { version = '6.0.0', path = '../../../primitives/keyring' }
-sp-runtime = { version = '6.0.0', path = '../../../primitives/runtime' }
+node-testing = { path = '../testing', version = '3.0.0-dev' }
+pallet-balances = { path = '../../../frame/balances', version = '4.0.0-dev' }
+pallet-contracts = { path = '../../../frame/contracts', version = '4.0.0-dev' }
+pallet-im-online = { path = '../../../frame/im-online', version = '4.0.0-dev' }
+pallet-timestamp = { path = '../../../frame/timestamp', version = '4.0.0-dev' }
+pallet-treasury = { path = '../../../frame/treasury', version = '4.0.0-dev' }
+sp-application-crypto = { path = '../../../primitives/application-crypto', version = '6.0.0' }
+sp-consensus-babe = { path = '../../../primitives/consensus/babe', version = '0.10.0-dev' }
+sp-externalities = { path = '../../../primitives/externalities', version = '0.12.0' }
+sp-keyring = { path = '../../../primitives/keyring', version = '6.0.0' }
+sp-runtime = { path = '../../../primitives/runtime', version = '6.0.0' }
 wat = '1.0'
 
 [features]

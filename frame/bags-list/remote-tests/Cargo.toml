@@ -25,4 +25,4 @@ sp-runtime = { path = '../../../primitives/runtime', version = '6.0.0' }
 sp-std = { path = '../../../primitives/std', version = '4.0.0' }
 sp-storage = { path = '../../../primitives/storage', version = '6.0.0' }
 sp-tracing = { path = '../../../primitives/tracing', version = '5.0.0' }
-tokio = { version = '1', features = ['macros'] }
+tokio = { features = ['macros'], version = '1' }

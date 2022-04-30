@@ -22,13 +22,13 @@ jsonrpc-pubsub = '18.0.0'
 log = '0.4.16'
 parking_lot = '0.12.0'
 sc-chain-spec = { path = '../chain-spec', version = '4.0.0-dev' }
-sc-transaction-pool-api = { version = '4.0.0-dev', path = '../transaction-pool/api' }
-scale-info = { version = '2.0.1', default-features = false, features = ['derive'] }
-serde = { version = '1.0.136', features = ['derive'] }
+sc-transaction-pool-api = { path = '../transaction-pool/api', version = '4.0.0-dev' }
+scale-info = { default-features = false, features = ['derive'], version = '2.0.1' }
+serde = { features = ['derive'], version = '1.0.136' }
 serde_json = '1.0.79'
-sp-core = { version = '6.0.0', path = '../../primitives/core' }
-sp-rpc = { version = '6.0.0', path = '../../primitives/rpc' }
-sp-runtime = { version = '6.0.0', path = '../../primitives/runtime' }
-sp-tracing = { version = '5.0.0', path = '../../primitives/tracing' }
-sp-version = { version = '5.0.0', path = '../../primitives/version' }
+sp-core = { path = '../../primitives/core', version = '6.0.0' }
+sp-rpc = { path = '../../primitives/rpc', version = '6.0.0' }
+sp-runtime = { path = '../../primitives/runtime', version = '6.0.0' }
+sp-tracing = { path = '../../primitives/tracing', version = '5.0.0' }
+sp-version = { path = '../../primitives/version', version = '5.0.0' }
 thiserror = '1.0'

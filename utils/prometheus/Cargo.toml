@@ -13,13 +13,13 @@ readme = 'README.md'
 targets = ['x86_64-unknown-linux-gnu']
 
 [dependencies]
-futures-util = { version = '0.3.19', default-features = false, features = ['io'] }
-hyper = { version = '0.14.16', default-features = false, features = ['http1', 'server', 'tcp'] }
+futures-util = { default-features = false, features = ['io'], version = '0.3.19' }
+hyper = { default-features = false, features = ['http1', 'server', 'tcp'], version = '0.14.16' }
 log = '0.4.16'
-prometheus = { version = '0.13.0', default-features = false }
+prometheus = { default-features = false, version = '0.13.0' }
 thiserror = '1.0'
-tokio = { version = '1.17.0', features = ['parking_lot'] }
+tokio = { features = ['parking_lot'], version = '1.17.0' }
 
 [dev-dependencies]
-hyper = { version = '0.14.16', features = ['client'] }
-tokio = { version = '1.17.0', features = ['rt-multi-thread'] }
+hyper = { features = ['client'], version = '0.14.16' }
+tokio = { features = ['rt-multi-thread'], version = '1.17.0' }

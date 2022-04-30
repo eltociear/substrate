@@ -14,24 +14,24 @@ readme = 'README.md'
 targets = ['x86_64-unknown-linux-gnu']
 
 [dependencies]
-codec = { package = 'parity-scale-codec', version = '3.0.0', default-features = false }
-futures = { version = '0.3.21', features = ['thread-pool'], optional = true }
-hash-db = { version = '0.15.2', default-features = false }
-libsecp256k1 = { version = '0.7', optional = true }
-log = { version = '0.4.16', optional = true }
-parking_lot = { version = '0.12.0', optional = true }
-secp256k1 = { version = '0.21.2', features = ['recovery', 'global-context'], optional = true }
-sp-core = { version = '6.0.0', default-features = false, path = '../core' }
-sp-externalities = { version = '0.12.0', optional = true, path = '../externalities' }
-sp-keystore = { version = '0.12.0', default-features = false, optional = true, path = '../keystore' }
-sp-runtime-interface = { version = '6.0.0', default-features = false, path = '../runtime-interface' }
-sp-state-machine = { version = '0.12.0', optional = true, path = '../state-machine' }
-sp-std = { version = '4.0.0', default-features = false, path = '../std' }
-sp-tracing = { version = '5.0.0', default-features = false, path = '../tracing' }
-sp-trie = { version = '6.0.0', optional = true, path = '../trie' }
-sp-wasm-interface = { version = '6.0.0', path = '../wasm-interface', default-features = false }
-tracing = { version = '0.1.29', default-features = false }
-tracing-core = { version = '0.1.26', default-features = false }
+codec = { default-features = false, package = 'parity-scale-codec', version = '3.0.0' }
+futures = { features = ['thread-pool'], optional = true, version = '0.3.21' }
+hash-db = { default-features = false, version = '0.15.2' }
+libsecp256k1 = { optional = true, version = '0.7' }
+log = { optional = true, version = '0.4.16' }
+parking_lot = { optional = true, version = '0.12.0' }
+secp256k1 = { features = ['recovery', 'global-context'], optional = true, version = '0.21.2' }
+sp-core = { default-features = false, path = '../core', version = '6.0.0' }
+sp-externalities = { optional = true, path = '../externalities', version = '0.12.0' }
+sp-keystore = { default-features = false, optional = true, path = '../keystore', version = '0.12.0' }
+sp-runtime-interface = { default-features = false, path = '../runtime-interface', version = '6.0.0' }
+sp-state-machine = { optional = true, path = '../state-machine', version = '0.12.0' }
+sp-std = { default-features = false, path = '../std', version = '4.0.0' }
+sp-tracing = { default-features = false, path = '../tracing', version = '5.0.0' }
+sp-trie = { optional = true, path = '../trie', version = '6.0.0' }
+sp-wasm-interface = { default-features = false, path = '../wasm-interface', version = '6.0.0' }
+tracing = { default-features = false, version = '0.1.29' }
+tracing-core = { default-features = false, version = '0.1.26' }
 
 [features]
 default = ['std']

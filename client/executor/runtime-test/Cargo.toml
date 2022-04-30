@@ -14,12 +14,12 @@ targets = ['x86_64-unknown-linux-gnu']
 
 [dependencies]
 paste = '1.0.6'
-sp-core = { version = '6.0.0', default-features = false, path = '../../../primitives/core' }
-sp-io = { version = '6.0.0', default-features = false, path = '../../../primitives/io', features = ['improved_panic_error_reporting'] }
-sp-runtime = { version = '6.0.0', default-features = false, path = '../../../primitives/runtime' }
-sp-sandbox = { version = '0.10.0-dev', default-features = false, path = '../../../primitives/sandbox' }
-sp-std = { version = '4.0.0', default-features = false, path = '../../../primitives/std' }
-sp-tasks = { version = '4.0.0-dev', default-features = false, path = '../../../primitives/tasks' }
+sp-core = { default-features = false, path = '../../../primitives/core', version = '6.0.0' }
+sp-io = { default-features = false, features = ['improved_panic_error_reporting'], path = '../../../primitives/io', version = '6.0.0' }
+sp-runtime = { default-features = false, path = '../../../primitives/runtime', version = '6.0.0' }
+sp-sandbox = { default-features = false, path = '../../../primitives/sandbox', version = '0.10.0-dev' }
+sp-std = { default-features = false, path = '../../../primitives/std', version = '4.0.0' }
+sp-tasks = { default-features = false, path = '../../../primitives/tasks', version = '4.0.0-dev' }
 
 [build-dependencies]
 substrate-wasm-builder = { version = '5.0.0-dev', path = '../../../utils/wasm-builder' }

@@ -13,42 +13,42 @@ readme = 'README.md'
 targets = ['x86_64-unknown-linux-gnu']
 
 [dependencies]
-codec = { package = 'parity-scale-codec', version = '3.0.0', default-features = false, features = [
+codec = { default-features = false, features = [
 	'derive',
-] }
-frame-benchmarking = { version = '4.0.0-dev', default-features = false, path = '../benchmarking', optional = true }
-frame-election-provider-support = { version = '4.0.0-dev', default-features = false, path = '../election-provider-support' }
-frame-support = { version = '4.0.0-dev', default-features = false, path = '../support' }
-frame-system = { version = '4.0.0-dev', default-features = false, path = '../system' }
-log = { version = '0.4.16', default-features = false }
-pallet-election-provider-support-benchmarking = { version = '4.0.0-dev', default-features = false, path = '../election-provider-support/benchmarking', optional = true }
-rand = { version = '0.7.3', default-features = false, optional = true, features = [
+], package = 'parity-scale-codec', version = '3.0.0' }
+frame-benchmarking = { default-features = false, optional = true, path = '../benchmarking', version = '4.0.0-dev' }
+frame-election-provider-support = { default-features = false, path = '../election-provider-support', version = '4.0.0-dev' }
+frame-support = { default-features = false, path = '../support', version = '4.0.0-dev' }
+frame-system = { default-features = false, path = '../system', version = '4.0.0-dev' }
+log = { default-features = false, version = '0.4.16' }
+pallet-election-provider-support-benchmarking = { default-features = false, optional = true, path = '../election-provider-support/benchmarking', version = '4.0.0-dev' }
+rand = { default-features = false, features = [
 	'alloc',
 	'small_rng',
-] }
-scale-info = { version = '2.0.1', default-features = false, features = [
+], optional = true, version = '0.7.3' }
+scale-info = { default-features = false, features = [
 	'derive',
-] }
-sp-arithmetic = { version = '5.0.0', default-features = false, path = '../../primitives/arithmetic' }
-sp-core = { version = '6.0.0', default-features = false, path = '../../primitives/core' }
-sp-io = { version = '6.0.0', default-features = false, path = '../../primitives/io' }
-sp-npos-elections = { version = '4.0.0-dev', default-features = false, path = '../../primitives/npos-elections' }
-sp-runtime = { version = '6.0.0', default-features = false, path = '../../primitives/runtime' }
-sp-std = { version = '4.0.0', default-features = false, path = '../../primitives/std' }
+], version = '2.0.1' }
+sp-arithmetic = { default-features = false, path = '../../primitives/arithmetic', version = '5.0.0' }
+sp-core = { default-features = false, path = '../../primitives/core', version = '6.0.0' }
+sp-io = { default-features = false, path = '../../primitives/io', version = '6.0.0' }
+sp-npos-elections = { default-features = false, path = '../../primitives/npos-elections', version = '4.0.0-dev' }
+sp-runtime = { default-features = false, path = '../../primitives/runtime', version = '6.0.0' }
+sp-std = { default-features = false, path = '../../primitives/std', version = '4.0.0' }
 static_assertions = '1.1.0'
-strum = { optional = true, default-features = false, version = '0.23.0', features = [
+strum = { default-features = false, features = [
 	'derive',
-] }
+], optional = true, version = '0.23.0' }
 
 [dev-dependencies]
-frame-benchmarking = { version = '4.0.0-dev', path = '../benchmarking' }
-pallet-balances = { version = '4.0.0-dev', path = '../balances' }
+frame-benchmarking = { path = '../benchmarking', version = '4.0.0-dev' }
+pallet-balances = { path = '../balances', version = '4.0.0-dev' }
 parking_lot = '0.12.0'
 rand = { version = '0.7.3' }
-sp-core = { version = '6.0.0', default-features = false, path = '../../primitives/core' }
-sp-io = { version = '6.0.0', path = '../../primitives/io' }
-sp-npos-elections = { version = '4.0.0-dev', default-features = false, path = '../../primitives/npos-elections' }
-sp-tracing = { version = '5.0.0', path = '../../primitives/tracing' }
+sp-core = { default-features = false, path = '../../primitives/core', version = '6.0.0' }
+sp-io = { path = '../../primitives/io', version = '6.0.0' }
+sp-npos-elections = { default-features = false, path = '../../primitives/npos-elections', version = '4.0.0-dev' }
+sp-tracing = { path = '../../primitives/tracing', version = '5.0.0' }
 
 [features]
 default = ['std']

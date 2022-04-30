@@ -9,9 +9,9 @@ description = 'A no-std/Substrate compatible library to construct binary merkle 
 homepage = 'https://substrate.io'
 
 [dependencies]
-hex = { version = '0.4', optional = true, default-features = false }
-log = { version = '0.4', optional = true, default-features = false }
-tiny-keccak = { version = '2.0.2', features = ['keccak'], optional = true }
+hex = { default-features = false, optional = true, version = '0.4' }
+log = { default-features = false, optional = true, version = '0.4' }
+tiny-keccak = { features = ['keccak'], optional = true, version = '2.0.2' }
 
 [dev-dependencies]
 env_logger = '0.9'

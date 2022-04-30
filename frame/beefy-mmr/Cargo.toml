@@ -9,26 +9,26 @@ repository = 'https://github.com/paritytech/substrate'
 homepage = 'https://substrate.io'
 
 [dependencies]
-beefy-merkle-tree = { version = '4.0.0-dev', path = './primitives', default-features = false }
-beefy-primitives = { version = '4.0.0-dev', path = '../../primitives/beefy', default-features = false }
-codec = { version = '3.0.0', package = 'parity-scale-codec', default-features = false, features = ['derive'] }
-frame-support = { version = '4.0.0-dev', path = '../support', default-features = false }
-frame-system = { version = '4.0.0-dev', path = '../system', default-features = false }
-hex = { version = '0.4', optional = true }
-log = { version = '0.4.16', default-features = false }
-pallet-beefy = { version = '4.0.0-dev', path = '../beefy', default-features = false }
-pallet-mmr = { version = '4.0.0-dev', path = '../merkle-mountain-range', default-features = false }
-pallet-session = { version = '4.0.0-dev', path = '../session', default-features = false }
-scale-info = { version = '2.0.1', default-features = false, features = ['derive'] }
-serde = { version = '1.0.136', optional = true }
-sp-core = { version = '6.0.0', path = '../../primitives/core', default-features = false }
-sp-io = { version = '6.0.0', path = '../../primitives/io', default-features = false }
-sp-runtime = { version = '6.0.0', path = '../../primitives/runtime', default-features = false }
-sp-std = { version = '4.0.0', path = '../../primitives/std', default-features = false }
+beefy-merkle-tree = { default-features = false, path = './primitives', version = '4.0.0-dev' }
+beefy-primitives = { default-features = false, path = '../../primitives/beefy', version = '4.0.0-dev' }
+codec = { default-features = false, features = ['derive'], package = 'parity-scale-codec', version = '3.0.0' }
+frame-support = { default-features = false, path = '../support', version = '4.0.0-dev' }
+frame-system = { default-features = false, path = '../system', version = '4.0.0-dev' }
+hex = { optional = true, version = '0.4' }
+log = { default-features = false, version = '0.4.16' }
+pallet-beefy = { default-features = false, path = '../beefy', version = '4.0.0-dev' }
+pallet-mmr = { default-features = false, path = '../merkle-mountain-range', version = '4.0.0-dev' }
+pallet-session = { default-features = false, path = '../session', version = '4.0.0-dev' }
+scale-info = { default-features = false, features = ['derive'], version = '2.0.1' }
+serde = { optional = true, version = '1.0.136' }
+sp-core = { default-features = false, path = '../../primitives/core', version = '6.0.0' }
+sp-io = { default-features = false, path = '../../primitives/io', version = '6.0.0' }
+sp-runtime = { default-features = false, path = '../../primitives/runtime', version = '6.0.0' }
+sp-std = { default-features = false, path = '../../primitives/std', version = '4.0.0' }
 
 [dev-dependencies]
 hex-literal = '0.3'
-sp-staking = { version = '4.0.0-dev', path = '../../primitives/staking' }
+sp-staking = { path = '../../primitives/staking', version = '4.0.0-dev' }
 
 [features]
 default = ['std']

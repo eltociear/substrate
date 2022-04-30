@@ -10,30 +10,30 @@ readme = 'README.md'
 homepage = 'https://substrate.io'
 
 [dependencies]
-finality-grandpa = { version = '0.15.0', features = ['derive-codec'] }
+finality-grandpa = { features = ['derive-codec'], version = '0.15.0' }
 futures = '0.3.16'
 jsonrpc-core = '18.0.0'
 jsonrpc-core-client = '18.0.0'
 jsonrpc-derive = '18.0.0'
 jsonrpc-pubsub = '18.0.0'
 log = '0.4.8'
-parity-scale-codec = { version = '3.0.0', features = ['derive'] }
-sc-client-api = { version = '4.0.0-dev', path = '../../api' }
-sc-finality-grandpa = { version = '0.10.0-dev', path = '../' }
-sc-rpc = { version = '4.0.0-dev', path = '../../rpc' }
-serde = { version = '1.0.105', features = ['derive'] }
+parity-scale-codec = { features = ['derive'], version = '3.0.0' }
+sc-client-api = { path = '../../api', version = '4.0.0-dev' }
+sc-finality-grandpa = { path = '../', version = '0.10.0-dev' }
+sc-rpc = { path = '../../rpc', version = '4.0.0-dev' }
+serde = { features = ['derive'], version = '1.0.105' }
 serde_json = '1.0.50'
-sp-blockchain = { version = '4.0.0-dev', path = '../../../primitives/blockchain' }
-sp-core = { version = '6.0.0', path = '../../../primitives/core' }
-sp-runtime = { version = '6.0.0', path = '../../../primitives/runtime' }
+sp-blockchain = { path = '../../../primitives/blockchain', version = '4.0.0-dev' }
+sp-core = { path = '../../../primitives/core', version = '6.0.0' }
+sp-runtime = { path = '../../../primitives/runtime', version = '6.0.0' }
 thiserror = '1.0'
 
 [dev-dependencies]
-sc-block-builder = { version = '0.10.0-dev', path = '../../block-builder' }
-sc-rpc = { version = '4.0.0-dev', path = '../../rpc', features = [
+sc-block-builder = { path = '../../block-builder', version = '0.10.0-dev' }
+sc-rpc = { features = [
 	'test-helpers',
-] }
-sp-core = { version = '6.0.0', path = '../../../primitives/core' }
-sp-finality-grandpa = { version = '4.0.0-dev', path = '../../../primitives/finality-grandpa' }
-sp-keyring = { version = '6.0.0', path = '../../../primitives/keyring' }
-substrate-test-runtime-client = { version = '2.0.0', path = '../../../test-utils/runtime/client' }
+], path = '../../rpc', version = '4.0.0-dev' }
+sp-core = { path = '../../../primitives/core', version = '6.0.0' }
+sp-finality-grandpa = { path = '../../../primitives/finality-grandpa', version = '4.0.0-dev' }
+sp-keyring = { path = '../../../primitives/keyring', version = '6.0.0' }
+substrate-test-runtime-client = { path = '../../../test-utils/runtime/client', version = '2.0.0' }

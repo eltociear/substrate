@@ -12,4 +12,4 @@ readme = 'README.md'
 
 [dependencies]
 thiserror = '1.0'
-zstd = { version = '0.10.0', default-features = false }
+zstd = { default-features = false, version = '0.10.0' }

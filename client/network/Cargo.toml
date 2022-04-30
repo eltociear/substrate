@@ -22,12 +22,12 @@ asynchronous-codec = '0.5'
 bitflags = '1.3.2'
 bytes = '1'
 cid = '0.6.0'
-codec = { package = 'parity-scale-codec', version = '3.0.0', features = [
+codec = { features = [
 	'derive',
-] }
+], package = 'parity-scale-codec', version = '3.0.0' }
 either = '1.5.3'
 fnv = '1.0.6'
-fork-tree = { version = '3.0.0', path = '../../utils/fork-tree' }
+fork-tree = { path = '../../utils/fork-tree', version = '3.0.0' }
 futures = '0.3.21'
 futures-timer = '3.0.2'
 hex = '0.4.0'
@@ -39,41 +39,41 @@ log = '0.4.16'
 lru = '0.7.5'
 parking_lot = '0.12.0'
 pin-project = '1.0.10'
-prometheus-endpoint = { package = 'substrate-prometheus-endpoint', version = '0.10.0-dev', path = '../../utils/prometheus' }
+prometheus-endpoint = { package = 'substrate-prometheus-endpoint', path = '../../utils/prometheus', version = '0.10.0-dev' }
 prost = '0.9'
 rand = '0.7.2'
-sc-block-builder = { version = '0.10.0-dev', path = '../block-builder' }
-sc-client-api = { version = '4.0.0-dev', path = '../api' }
-sc-consensus = { version = '0.10.0-dev', path = '../consensus/common' }
-sc-peerset = { version = '4.0.0-dev', path = '../peerset' }
-sc-utils = { version = '4.0.0-dev', path = '../utils' }
-serde = { version = '1.0.136', features = ['derive'] }
+sc-block-builder = { path = '../block-builder', version = '0.10.0-dev' }
+sc-client-api = { path = '../api', version = '4.0.0-dev' }
+sc-consensus = { path = '../consensus/common', version = '0.10.0-dev' }
+sc-peerset = { path = '../peerset', version = '4.0.0-dev' }
+sc-utils = { path = '../utils', version = '4.0.0-dev' }
+serde = { features = ['derive'], version = '1.0.136' }
 serde_json = '1.0.79'
 smallvec = '1.8.0'
-sp-arithmetic = { version = '5.0.0', path = '../../primitives/arithmetic' }
-sp-blockchain = { version = '4.0.0-dev', path = '../../primitives/blockchain' }
-sp-consensus = { version = '0.10.0-dev', path = '../../primitives/consensus/common' }
-sp-core = { version = '6.0.0', path = '../../primitives/core' }
-sp-finality-grandpa = { version = '4.0.0-dev', path = '../../primitives/finality-grandpa' }
-sp-runtime = { version = '6.0.0', path = '../../primitives/runtime' }
+sp-arithmetic = { path = '../../primitives/arithmetic', version = '5.0.0' }
+sp-blockchain = { path = '../../primitives/blockchain', version = '4.0.0-dev' }
+sp-consensus = { path = '../../primitives/consensus/common', version = '0.10.0-dev' }
+sp-core = { path = '../../primitives/core', version = '6.0.0' }
+sp-finality-grandpa = { path = '../../primitives/finality-grandpa', version = '4.0.0-dev' }
+sp-runtime = { path = '../../primitives/runtime', version = '6.0.0' }
 thiserror = '1.0'
-unsigned-varint = { version = '0.6.0', features = [
+unsigned-varint = { features = [
 	'futures',
 	'asynchronous_codec',
-] }
+], version = '0.6.0' }
 void = '1.0.2'
 zeroize = '1.4.3'
 
 [dev-dependencies]
 assert_matches = '1.3'
 async-std = '1.11.0'
-libp2p = { version = '0.44.0', default-features = false }
+libp2p = { default-features = false, version = '0.44.0' }
 quickcheck = '1.0.3'
 rand = '0.7.2'
-sp-test-primitives = { version = '2.0.0', path = '../../primitives/test-primitives' }
-sp-tracing = { version = '5.0.0', path = '../../primitives/tracing' }
-substrate-test-runtime = { version = '2.0.0', path = '../../test-utils/runtime' }
-substrate-test-runtime-client = { version = '2.0.0', path = '../../test-utils/runtime/client' }
+sp-test-primitives = { path = '../../primitives/test-primitives', version = '2.0.0' }
+sp-tracing = { path = '../../primitives/tracing', version = '5.0.0' }
+substrate-test-runtime = { path = '../../test-utils/runtime', version = '2.0.0' }
+substrate-test-runtime-client = { path = '../../test-utils/runtime/client', version = '2.0.0' }
 tempfile = '3.1.0'
 
 [features]

@@ -13,19 +13,19 @@ readme = 'README.md'
 targets = ['x86_64-unknown-linux-gnu']
 
 [dependencies]
-codec = { package = 'parity-scale-codec', version = '3.0.0', default-features = false }
-hash-db = { version = '0.15.2', optional = true }
-log = { version = '0.4.16', default-features = false }
-sp-api-proc-macro = { version = '4.0.0-dev', path = 'proc-macro' }
-sp-core = { version = '6.0.0', default-features = false, path = '../core' }
-sp-runtime = { version = '6.0.0', default-features = false, path = '../runtime' }
-sp-state-machine = { version = '0.12.0', optional = true, path = '../state-machine' }
-sp-std = { version = '4.0.0', default-features = false, path = '../std' }
-sp-version = { version = '5.0.0', default-features = false, path = '../version' }
-thiserror = { version = '1.0.30', optional = true }
+codec = { default-features = false, package = 'parity-scale-codec', version = '3.0.0' }
+hash-db = { optional = true, version = '0.15.2' }
+log = { default-features = false, version = '0.4.16' }
+sp-api-proc-macro = { path = 'proc-macro', version = '4.0.0-dev' }
+sp-core = { default-features = false, path = '../core', version = '6.0.0' }
+sp-runtime = { default-features = false, path = '../runtime', version = '6.0.0' }
+sp-state-machine = { optional = true, path = '../state-machine', version = '0.12.0' }
+sp-std = { default-features = false, path = '../std', version = '4.0.0' }
+sp-version = { default-features = false, path = '../version', version = '5.0.0' }
+thiserror = { optional = true, version = '1.0.30' }
 
 [dev-dependencies]
-sp-test-primitives = { version = '2.0.0', path = '../test-primitives' }
+sp-test-primitives = { path = '../test-primitives', version = '2.0.0' }
 
 [features]
 default = ['std']

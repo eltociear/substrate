@@ -15,15 +15,15 @@ features = ['with-tracing']
 targets = ['x86_64-unknown-linux-gnu', 'wasm32-unknown-unknown']
 
 [dependencies]
-codec = { version = '3.0.0', package = 'parity-scale-codec', default-features = false, features = [
+codec = { default-features = false, features = [
 	'derive',
-] }
-sp-std = { version = '4.0.0', path = '../std', default-features = false }
-tracing = { version = '0.1.29', default-features = false }
-tracing-core = { version = '0.1.26', default-features = false }
-tracing-subscriber = { version = '0.2.25', optional = true, features = [
+], package = 'parity-scale-codec', version = '3.0.0' }
+sp-std = { default-features = false, path = '../std', version = '4.0.0' }
+tracing = { default-features = false, version = '0.1.29' }
+tracing-core = { default-features = false, version = '0.1.26' }
+tracing-subscriber = { features = [
 	'tracing-log',
-] }
+], optional = true, version = '0.2.25' }
 
 [features]
 default = ['std']

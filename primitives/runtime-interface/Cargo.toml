@@ -14,23 +14,23 @@ readme = 'README.md'
 targets = ['x86_64-unknown-linux-gnu']
 
 [dependencies]
-codec = { package = 'parity-scale-codec', version = '3.0.0', default-features = false }
+codec = { default-features = false, package = 'parity-scale-codec', version = '3.0.0' }
 impl-trait-for-tuples = '0.2.2'
-primitive-types = { version = '0.11.1', default-features = false }
-sp-externalities = { version = '0.12.0', optional = true, path = '../externalities' }
-sp-runtime-interface-proc-macro = { version = '5.0.0', path = 'proc-macro' }
-sp-std = { version = '4.0.0', default-features = false, path = '../std' }
-sp-storage = { version = '6.0.0', default-features = false, path = '../storage' }
-sp-tracing = { version = '5.0.0', default-features = false, path = '../tracing' }
-sp-wasm-interface = { version = '6.0.0', path = '../wasm-interface', default-features = false }
+primitive-types = { default-features = false, version = '0.11.1' }
+sp-externalities = { optional = true, path = '../externalities', version = '0.12.0' }
+sp-runtime-interface-proc-macro = { path = 'proc-macro', version = '5.0.0' }
+sp-std = { default-features = false, path = '../std', version = '4.0.0' }
+sp-storage = { default-features = false, path = '../storage', version = '6.0.0' }
+sp-tracing = { default-features = false, path = '../tracing', version = '5.0.0' }
+sp-wasm-interface = { default-features = false, path = '../wasm-interface', version = '6.0.0' }
 static_assertions = '1.0.0'
 
 [dev-dependencies]
 rustversion = '1.0.6'
-sp-core = { version = '6.0.0', path = '../core' }
-sp-io = { version = '6.0.0', path = '../io' }
-sp-runtime-interface-test-wasm = { version = '2.0.0', path = 'test-wasm' }
-sp-state-machine = { version = '0.12.0', path = '../state-machine' }
+sp-core = { path = '../core', version = '6.0.0' }
+sp-io = { path = '../io', version = '6.0.0' }
+sp-runtime-interface-test-wasm = { path = 'test-wasm', version = '2.0.0' }
+sp-state-machine = { path = '../state-machine', version = '0.12.0' }
 trybuild = '1.0.60'
 
 [features]

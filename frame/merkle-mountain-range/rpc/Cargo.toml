@@ -17,12 +17,12 @@ codec = { package = 'parity-scale-codec', version = '3.0.0' }
 jsonrpc-core = '18.0.0'
 jsonrpc-core-client = '18.0.0'
 jsonrpc-derive = '18.0.0'
-serde = { version = '1.0.136', features = ['derive'] }
-sp-api = { version = '4.0.0-dev', path = '../../../primitives/api' }
-sp-blockchain = { version = '4.0.0-dev', path = '../../../primitives/blockchain' }
-sp-core = { version = '6.0.0', path = '../../../primitives/core' }
-sp-mmr-primitives = { version = '4.0.0-dev', default-features = false, path = '../../../primitives/merkle-mountain-range' }
-sp-runtime = { version = '6.0.0', path = '../../../primitives/runtime' }
+serde = { features = ['derive'], version = '1.0.136' }
+sp-api = { path = '../../../primitives/api', version = '4.0.0-dev' }
+sp-blockchain = { path = '../../../primitives/blockchain', version = '4.0.0-dev' }
+sp-core = { path = '../../../primitives/core', version = '6.0.0' }
+sp-mmr-primitives = { default-features = false, path = '../../../primitives/merkle-mountain-range', version = '4.0.0-dev' }
+sp-runtime = { path = '../../../primitives/runtime', version = '6.0.0' }
 
 [dev-dependencies]
 serde_json = '1.0.79'

@@ -13,32 +13,32 @@ readme = 'README.md'
 targets = ['x86_64-unknown-linux-gnu']
 
 [dependencies]
-codec = { package = 'parity-scale-codec', version = '3.0.0', default-features = false }
-frame-benchmarking = { version = '4.0.0-dev', default-features = false, path = '../../benchmarking' }
-frame-election-provider-support = { version = '4.0.0-dev', default-features = false, path = '../../election-provider-support' }
-frame-support = { version = '4.0.0-dev', default-features = false, path = '../../support' }
-frame-system = { version = '4.0.0-dev', default-features = false, path = '../../system' }
-pallet-babe = { version = '4.0.0-dev', default-features = false, path = '../../babe' }
-pallet-balances = { version = '4.0.0-dev', default-features = false, path = '../../balances' }
-pallet-grandpa = { version = '4.0.0-dev', default-features = false, path = '../../grandpa' }
-pallet-im-online = { version = '4.0.0-dev', default-features = false, path = '../../im-online' }
-pallet-offences = { version = '4.0.0-dev', default-features = false, features = [
+codec = { default-features = false, package = 'parity-scale-codec', version = '3.0.0' }
+frame-benchmarking = { default-features = false, path = '../../benchmarking', version = '4.0.0-dev' }
+frame-election-provider-support = { default-features = false, path = '../../election-provider-support', version = '4.0.0-dev' }
+frame-support = { default-features = false, path = '../../support', version = '4.0.0-dev' }
+frame-system = { default-features = false, path = '../../system', version = '4.0.0-dev' }
+pallet-babe = { default-features = false, path = '../../babe', version = '4.0.0-dev' }
+pallet-balances = { default-features = false, path = '../../balances', version = '4.0.0-dev' }
+pallet-grandpa = { default-features = false, path = '../../grandpa', version = '4.0.0-dev' }
+pallet-im-online = { default-features = false, path = '../../im-online', version = '4.0.0-dev' }
+pallet-offences = { default-features = false, features = [
 	'runtime-benchmarks',
-], path = '../../offences' }
-pallet-session = { version = '4.0.0-dev', default-features = false, path = '../../session' }
-pallet-staking = { version = '4.0.0-dev', default-features = false, features = [
+], path = '../../offences', version = '4.0.0-dev' }
+pallet-session = { default-features = false, path = '../../session', version = '4.0.0-dev' }
+pallet-staking = { default-features = false, features = [
 	'runtime-benchmarks',
-], path = '../../staking' }
-scale-info = { version = '2.0.0', default-features = false, features = ['derive'] }
-sp-runtime = { version = '6.0.0', default-features = false, path = '../../../primitives/runtime' }
-sp-staking = { version = '4.0.0-dev', default-features = false, path = '../../../primitives/staking' }
-sp-std = { version = '4.0.0', default-features = false, path = '../../../primitives/std' }
+], path = '../../staking', version = '4.0.0-dev' }
+scale-info = { default-features = false, features = ['derive'], version = '2.0.0' }
+sp-runtime = { default-features = false, path = '../../../primitives/runtime', version = '6.0.0' }
+sp-staking = { default-features = false, path = '../../../primitives/staking', version = '4.0.0-dev' }
+sp-std = { default-features = false, path = '../../../primitives/std', version = '4.0.0' }
 
 [dev-dependencies]
-pallet-staking-reward-curve = { version = '4.0.0-dev', path = '../../staking/reward-curve' }
-pallet-timestamp = { version = '4.0.0-dev', path = '../../timestamp' }
-sp-core = { version = '6.0.0', path = '../../../primitives/core' }
-sp-io = { version = '6.0.0', path = '../../../primitives/io' }
+pallet-staking-reward-curve = { path = '../../staking/reward-curve', version = '4.0.0-dev' }
+pallet-timestamp = { path = '../../timestamp', version = '4.0.0-dev' }
+sp-core = { path = '../../../primitives/core', version = '6.0.0' }
+sp-io = { path = '../../../primitives/io', version = '6.0.0' }
 
 [features]
 default = ['std']

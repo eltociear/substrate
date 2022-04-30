@@ -13,18 +13,18 @@ readme = 'README.md'
 targets = ['x86_64-unknown-linux-gnu']
 
 [dependencies]
-codec = { version = '3.0.0', package = 'parity-scale-codec', default-features = false, features = ['derive'] }
-scale-info = { version = '2.0.1', default-features = false, features = ['derive'] }
-sp-api = { version = '4.0.0-dev', path = '../api', default-features = false }
-sp-application-crypto = { version = '6.0.0', path = '../application-crypto', default-features = false }
-sp-core = { version = '6.0.0', path = '../core', default-features = false }
-sp-runtime = { version = '6.0.0', path = '../runtime', default-features = false }
-sp-std = { version = '4.0.0', path = '../std', default-features = false }
+codec = { default-features = false, features = ['derive'], package = 'parity-scale-codec', version = '3.0.0' }
+scale-info = { default-features = false, features = ['derive'], version = '2.0.1' }
+sp-api = { default-features = false, path = '../api', version = '4.0.0-dev' }
+sp-application-crypto = { default-features = false, path = '../application-crypto', version = '6.0.0' }
+sp-core = { default-features = false, path = '../core', version = '6.0.0' }
+sp-runtime = { default-features = false, path = '../runtime', version = '6.0.0' }
+sp-std = { default-features = false, path = '../std', version = '4.0.0' }
 
 [dev-dependencies]
 hex = '0.4.3'
 hex-literal = '0.3'
-sp-keystore = { version = '0.12.0', path = '../keystore' }
+sp-keystore = { path = '../keystore', version = '0.12.0' }
 
 [features]
 default = ['std']

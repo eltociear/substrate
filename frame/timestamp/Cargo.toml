@@ -14,21 +14,21 @@ readme = 'README.md'
 targets = ['x86_64-unknown-linux-gnu']
 
 [dependencies]
-codec = { package = 'parity-scale-codec', version = '3.0.0', default-features = false, features = ['derive', 'max-encoded-len'] }
-frame-benchmarking = { version = '4.0.0-dev', default-features = false, path = '../benchmarking', optional = true }
-frame-support = { version = '4.0.0-dev', default-features = false, path = '../support' }
-frame-system = { version = '4.0.0-dev', default-features = false, path = '../system' }
-log = { version = '0.4.16', default-features = false }
-scale-info = { version = '2.0.1', default-features = false, features = ['derive'] }
-sp-inherents = { version = '4.0.0-dev', default-features = false, path = '../../primitives/inherents' }
-sp-io = { version = '6.0.0', default-features = false, path = '../../primitives/io', optional = true }
-sp-runtime = { version = '6.0.0', default-features = false, path = '../../primitives/runtime' }
-sp-std = { version = '4.0.0', default-features = false, path = '../../primitives/std' }
-sp-timestamp = { version = '4.0.0-dev', default-features = false, path = '../../primitives/timestamp' }
+codec = { default-features = false, features = ['derive', 'max-encoded-len'], package = 'parity-scale-codec', version = '3.0.0' }
+frame-benchmarking = { default-features = false, optional = true, path = '../benchmarking', version = '4.0.0-dev' }
+frame-support = { default-features = false, path = '../support', version = '4.0.0-dev' }
+frame-system = { default-features = false, path = '../system', version = '4.0.0-dev' }
+log = { default-features = false, version = '0.4.16' }
+scale-info = { default-features = false, features = ['derive'], version = '2.0.1' }
+sp-inherents = { default-features = false, path = '../../primitives/inherents', version = '4.0.0-dev' }
+sp-io = { default-features = false, optional = true, path = '../../primitives/io', version = '6.0.0' }
+sp-runtime = { default-features = false, path = '../../primitives/runtime', version = '6.0.0' }
+sp-std = { default-features = false, path = '../../primitives/std', version = '4.0.0' }
+sp-timestamp = { default-features = false, path = '../../primitives/timestamp', version = '4.0.0-dev' }
 
 [dev-dependencies]
-sp-core = { version = '6.0.0', path = '../../primitives/core' }
-sp-io = { version = '6.0.0', path = '../../primitives/io' }
+sp-core = { path = '../../primitives/core', version = '6.0.0' }
+sp-io = { path = '../../primitives/io', version = '6.0.0' }
 
 [features]
 default = ['std']

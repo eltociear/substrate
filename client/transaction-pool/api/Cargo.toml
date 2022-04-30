@@ -11,7 +11,7 @@ description = 'Transaction pool client facing API.'
 [dependencies]
 futures = '0.3.21'
 log = '0.4.16'
-serde = { version = '1.0.136', features = ['derive'] }
-sp-blockchain = { version = '4.0.0-dev', path = '../../../primitives/blockchain' }
-sp-runtime = { version = '6.0.0', default-features = false, path = '../../../primitives/runtime' }
+serde = { features = ['derive'], version = '1.0.136' }
+sp-blockchain = { path = '../../../primitives/blockchain', version = '4.0.0-dev' }
+sp-runtime = { default-features = false, path = '../../../primitives/runtime', version = '6.0.0' }
 thiserror = '1.0.30'

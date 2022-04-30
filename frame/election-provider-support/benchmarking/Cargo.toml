@@ -12,14 +12,14 @@ description = 'Benchmarking for election provider support onchain config trait'
 targets = ['x86_64-unknown-linux-gnu']
 
 [dependencies]
-codec = { package = 'parity-scale-codec', version = '3.0.0', default-features = false, features = [
+codec = { default-features = false, features = [
 	'derive',
-] }
-frame-benchmarking = { version = '4.0.0-dev', default-features = false, path = '../../benchmarking', optional = true }
-frame-election-provider-support = { version = '4.0.0-dev', default-features = false, path = '..' }
-frame-system = { version = '4.0.0-dev', default-features = false, path = '../../system' }
-sp-npos-elections = { version = '4.0.0-dev', default-features = false, path = '../../../primitives/npos-elections' }
-sp-runtime = { version = '6.0.0', default-features = false, path = '../../../primitives/runtime' }
+], package = 'parity-scale-codec', version = '3.0.0' }
+frame-benchmarking = { default-features = false, optional = true, path = '../../benchmarking', version = '4.0.0-dev' }
+frame-election-provider-support = { default-features = false, path = '..', version = '4.0.0-dev' }
+frame-system = { default-features = false, path = '../../system', version = '4.0.0-dev' }
+sp-npos-elections = { default-features = false, path = '../../../primitives/npos-elections', version = '4.0.0-dev' }
+sp-runtime = { default-features = false, path = '../../../primitives/runtime', version = '6.0.0' }
 
 [features]
 default = ['std']

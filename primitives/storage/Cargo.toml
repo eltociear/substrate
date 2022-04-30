@@ -14,12 +14,12 @@ readme = 'README.md'
 targets = ['x86_64-unknown-linux-gnu']
 
 [dependencies]
-codec = { package = 'parity-scale-codec', version = '3.0.0', default-features = false, features = ['derive'] }
-impl-serde = { version = '0.3.1', optional = true }
+codec = { default-features = false, features = ['derive'], package = 'parity-scale-codec', version = '3.0.0' }
+impl-serde = { optional = true, version = '0.3.1' }
 ref-cast = '1.0.0'
-serde = { version = '1.0.136', optional = true, features = ['derive'] }
-sp-debug-derive = { version = '4.0.0', default-features = false, path = '../debug-derive' }
-sp-std = { version = '4.0.0', default-features = false, path = '../std' }
+serde = { features = ['derive'], optional = true, version = '1.0.136' }
+sp-debug-derive = { default-features = false, path = '../debug-derive', version = '4.0.0' }
+sp-std = { default-features = false, path = '../std', version = '4.0.0' }
 
 [features]
 default = [ 'std' ]

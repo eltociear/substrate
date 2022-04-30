@@ -29,58 +29,58 @@ hash-db = '0.15.2'
 jsonrpc-core = '18.0'
 jsonrpc-pubsub = '18.0'
 log = '0.4.16'
-parity-util-mem = { version = '0.11.0', default-features = false, features = [
+parity-util-mem = { default-features = false, features = [
 	'primitive-types',
-] }
+], version = '0.11.0' }
 parking_lot = '0.12.0'
 pin-project = '1.0.10'
 prometheus-endpoint = { package = 'substrate-prometheus-endpoint', path = '../../utils/prometheus', version = '0.10.0-dev' }
 rand = '0.7.3'
-sc-block-builder = { version = '0.10.0-dev', path = '../block-builder' }
-sc-chain-spec = { version = '4.0.0-dev', path = '../chain-spec' }
-sc-client-api = { version = '4.0.0-dev', path = '../api' }
-sc-client-db = { version = '0.10.0-dev', default-features = false, path = '../db' }
-sc-consensus = { version = '0.10.0-dev', path = '../../client/consensus/common' }
-sc-executor = { version = '0.10.0-dev', path = '../executor' }
-sc-informant = { version = '0.10.0-dev', path = '../informant' }
-sc-keystore = { version = '4.0.0-dev', path = '../keystore' }
-sc-network = { version = '0.10.0-dev', path = '../network' }
-sc-offchain = { version = '4.0.0-dev', path = '../offchain' }
-sc-rpc = { version = '4.0.0-dev', path = '../rpc' }
-sc-rpc-server = { version = '4.0.0-dev', path = '../rpc-servers' }
-sc-sysinfo = { version = '6.0.0-dev', path = '../sysinfo' }
-sc-telemetry = { version = '4.0.0-dev', path = '../telemetry' }
-sc-tracing = { version = '4.0.0-dev', path = '../tracing' }
-sc-transaction-pool = { version = '4.0.0-dev', path = '../transaction-pool' }
-sc-transaction-pool-api = { version = '4.0.0-dev', path = '../transaction-pool/api' }
-sc-utils = { version = '4.0.0-dev', path = '../utils' }
+sc-block-builder = { path = '../block-builder', version = '0.10.0-dev' }
+sc-chain-spec = { path = '../chain-spec', version = '4.0.0-dev' }
+sc-client-api = { path = '../api', version = '4.0.0-dev' }
+sc-client-db = { default-features = false, path = '../db', version = '0.10.0-dev' }
+sc-consensus = { path = '../../client/consensus/common', version = '0.10.0-dev' }
+sc-executor = { path = '../executor', version = '0.10.0-dev' }
+sc-informant = { path = '../informant', version = '0.10.0-dev' }
+sc-keystore = { path = '../keystore', version = '4.0.0-dev' }
+sc-network = { path = '../network', version = '0.10.0-dev' }
+sc-offchain = { path = '../offchain', version = '4.0.0-dev' }
+sc-rpc = { path = '../rpc', version = '4.0.0-dev' }
+sc-rpc-server = { path = '../rpc-servers', version = '4.0.0-dev' }
+sc-sysinfo = { path = '../sysinfo', version = '6.0.0-dev' }
+sc-telemetry = { path = '../telemetry', version = '4.0.0-dev' }
+sc-tracing = { path = '../tracing', version = '4.0.0-dev' }
+sc-transaction-pool = { path = '../transaction-pool', version = '4.0.0-dev' }
+sc-transaction-pool-api = { path = '../transaction-pool/api', version = '4.0.0-dev' }
+sc-utils = { path = '../utils', version = '4.0.0-dev' }
 serde = '1.0.136'
 serde_json = '1.0.79'
-sp-api = { version = '4.0.0-dev', path = '../../primitives/api' }
-sp-application-crypto = { version = '6.0.0', path = '../../primitives/application-crypto' }
-sp-block-builder = { version = '4.0.0-dev', path = '../../primitives/block-builder' }
-sp-blockchain = { version = '4.0.0-dev', path = '../../primitives/blockchain' }
-sp-consensus = { version = '0.10.0-dev', path = '../../primitives/consensus/common' }
-sp-core = { version = '6.0.0', path = '../../primitives/core' }
-sp-externalities = { version = '0.12.0', path = '../../primitives/externalities' }
-sp-inherents = { version = '4.0.0-dev', path = '../../primitives/inherents' }
-sp-keystore = { version = '0.12.0', path = '../../primitives/keystore' }
-sp-runtime = { version = '6.0.0', path = '../../primitives/runtime' }
-sp-session = { version = '4.0.0-dev', path = '../../primitives/session' }
-sp-state-machine = { version = '0.12.0', path = '../../primitives/state-machine' }
-sp-storage = { version = '6.0.0', path = '../../primitives/storage' }
-sp-tracing = { version = '5.0.0', path = '../../primitives/tracing' }
-sp-transaction-pool = { version = '4.0.0-dev', path = '../../primitives/transaction-pool' }
-sp-transaction-storage-proof = { version = '4.0.0-dev', path = '../../primitives/transaction-storage-proof' }
-sp-trie = { version = '6.0.0', path = '../../primitives/trie' }
-sp-version = { version = '5.0.0', path = '../../primitives/version' }
+sp-api = { path = '../../primitives/api', version = '4.0.0-dev' }
+sp-application-crypto = { path = '../../primitives/application-crypto', version = '6.0.0' }
+sp-block-builder = { path = '../../primitives/block-builder', version = '4.0.0-dev' }
+sp-blockchain = { path = '../../primitives/blockchain', version = '4.0.0-dev' }
+sp-consensus = { path = '../../primitives/consensus/common', version = '0.10.0-dev' }
+sp-core = { path = '../../primitives/core', version = '6.0.0' }
+sp-externalities = { path = '../../primitives/externalities', version = '0.12.0' }
+sp-inherents = { path = '../../primitives/inherents', version = '4.0.0-dev' }
+sp-keystore = { path = '../../primitives/keystore', version = '0.12.0' }
+sp-runtime = { path = '../../primitives/runtime', version = '6.0.0' }
+sp-session = { path = '../../primitives/session', version = '4.0.0-dev' }
+sp-state-machine = { path = '../../primitives/state-machine', version = '0.12.0' }
+sp-storage = { path = '../../primitives/storage', version = '6.0.0' }
+sp-tracing = { path = '../../primitives/tracing', version = '5.0.0' }
+sp-transaction-pool = { path = '../../primitives/transaction-pool', version = '4.0.0-dev' }
+sp-transaction-storage-proof = { path = '../../primitives/transaction-storage-proof', version = '4.0.0-dev' }
+sp-trie = { path = '../../primitives/trie', version = '6.0.0' }
+sp-version = { path = '../../primitives/version', version = '5.0.0' }
 tempfile = '3.1.0'
 thiserror = '1.0.30'
-tokio = { version = '1.17.0', features = ['time', 'rt-multi-thread', 'parking_lot'] }
+tokio = { features = ['time', 'rt-multi-thread', 'parking_lot'], version = '1.17.0' }
 tracing = '0.1.29'
 tracing-futures = { version = '0.2.4' }
 
 [dev-dependencies]
-async-std = { version = '1.11.0', default-features = false }
-substrate-test-runtime = { version = '2.0.0', path = '../../test-utils/runtime/' }
-substrate-test-runtime-client = { version = '2.0.0', path = '../../test-utils/runtime/client' }
+async-std = { default-features = false, version = '1.11.0' }
+substrate-test-runtime = { path = '../../test-utils/runtime/', version = '2.0.0' }
+substrate-test-runtime-client = { path = '../../test-utils/runtime/client', version = '2.0.0' }

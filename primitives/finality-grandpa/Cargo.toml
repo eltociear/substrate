@@ -14,17 +14,17 @@ readme = 'README.md'
 targets = ['x86_64-unknown-linux-gnu']
 
 [dependencies]
-codec = { package = 'parity-scale-codec', version = '3.0.0', default-features = false, features = ['derive'] }
-grandpa = { package = 'finality-grandpa', version = '0.15.0', default-features = false, features = ['derive-codec'] }
-log = { version = '0.4.16', optional = true }
-scale-info = { version = '2.0.1', default-features = false, features = ['derive'] }
-serde = { version = '1.0.136', optional = true, features = ['derive'] }
-sp-api = { version = '4.0.0-dev', default-features = false, path = '../api' }
-sp-application-crypto = { version = '6.0.0', default-features = false, path = '../application-crypto' }
-sp-core = { version = '6.0.0', default-features = false, path = '../core' }
-sp-keystore = { version = '0.12.0', default-features = false, path = '../keystore', optional = true }
-sp-runtime = { version = '6.0.0', default-features = false, path = '../runtime' }
-sp-std = { version = '4.0.0', default-features = false, path = '../std' }
+codec = { default-features = false, features = ['derive'], package = 'parity-scale-codec', version = '3.0.0' }
+grandpa = { default-features = false, features = ['derive-codec'], package = 'finality-grandpa', version = '0.15.0' }
+log = { optional = true, version = '0.4.16' }
+scale-info = { default-features = false, features = ['derive'], version = '2.0.1' }
+serde = { features = ['derive'], optional = true, version = '1.0.136' }
+sp-api = { default-features = false, path = '../api', version = '4.0.0-dev' }
+sp-application-crypto = { default-features = false, path = '../application-crypto', version = '6.0.0' }
+sp-core = { default-features = false, path = '../core', version = '6.0.0' }
+sp-keystore = { default-features = false, optional = true, path = '../keystore', version = '0.12.0' }
+sp-runtime = { default-features = false, path = '../runtime', version = '6.0.0' }
+sp-std = { default-features = false, path = '../std', version = '4.0.0' }
 
 [features]
 default = ['std']

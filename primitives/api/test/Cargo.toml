@@ -14,21 +14,21 @@ targets = ['x86_64-unknown-linux-gnu']
 [dependencies]
 codec = { package = 'parity-scale-codec', version = '3.0.0' }
 rustversion = '1.0.6'
-sc-block-builder = { version = '0.10.0-dev', path = '../../../client/block-builder' }
-sp-api = { version = '4.0.0-dev', path = '../' }
-sp-consensus = { version = '0.10.0-dev', path = '../../consensus/common' }
-sp-runtime = { version = '6.0.0', path = '../../runtime' }
-sp-state-machine = { version = '0.12.0', path = '../../state-machine' }
-sp-tracing = { version = '5.0.0', path = '../../tracing' }
-sp-version = { version = '5.0.0', path = '../../version' }
-substrate-test-runtime-client = { version = '2.0.0', path = '../../../test-utils/runtime/client' }
+sc-block-builder = { path = '../../../client/block-builder', version = '0.10.0-dev' }
+sp-api = { path = '../', version = '4.0.0-dev' }
+sp-consensus = { path = '../../consensus/common', version = '0.10.0-dev' }
+sp-runtime = { path = '../../runtime', version = '6.0.0' }
+sp-state-machine = { path = '../../state-machine', version = '0.12.0' }
+sp-tracing = { path = '../../tracing', version = '5.0.0' }
+sp-version = { path = '../../version', version = '5.0.0' }
+substrate-test-runtime-client = { path = '../../../test-utils/runtime/client', version = '2.0.0' }
 trybuild = '1.0.60'
 
 [dev-dependencies]
 criterion = '0.3.0'
 futures = '0.3.21'
 log = '0.4.16'
-sp-core = { version = '6.0.0', path = '../../core' }
+sp-core = { path = '../../core', version = '6.0.0' }
 
 [[bench]]
 name = 'bench'

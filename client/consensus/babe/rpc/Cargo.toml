@@ -17,24 +17,24 @@ futures = '0.3.21'
 jsonrpc-core = '18.0.0'
 jsonrpc-core-client = '18.0.0'
 jsonrpc-derive = '18.0.0'
-sc-consensus-babe = { version = '0.10.0-dev', path = '../' }
-sc-consensus-epochs = { version = '0.10.0-dev', path = '../../epochs' }
-sc-rpc-api = { version = '0.10.0-dev', path = '../../../rpc-api' }
-serde = { version = '1.0.136', features = ['derive'] }
-sp-api = { version = '4.0.0-dev', path = '../../../../primitives/api' }
-sp-application-crypto = { version = '6.0.0', path = '../../../../primitives/application-crypto' }
-sp-blockchain = { version = '4.0.0-dev', path = '../../../../primitives/blockchain' }
-sp-consensus = { version = '0.10.0-dev', path = '../../../../primitives/consensus/common' }
-sp-consensus-babe = { version = '0.10.0-dev', path = '../../../../primitives/consensus/babe' }
-sp-core = { version = '6.0.0', path = '../../../../primitives/core' }
-sp-keystore = { version = '0.12.0', path = '../../../../primitives/keystore' }
-sp-runtime = { version = '6.0.0', path = '../../../../primitives/runtime' }
+sc-consensus-babe = { path = '../', version = '0.10.0-dev' }
+sc-consensus-epochs = { path = '../../epochs', version = '0.10.0-dev' }
+sc-rpc-api = { path = '../../../rpc-api', version = '0.10.0-dev' }
+serde = { features = ['derive'], version = '1.0.136' }
+sp-api = { path = '../../../../primitives/api', version = '4.0.0-dev' }
+sp-application-crypto = { path = '../../../../primitives/application-crypto', version = '6.0.0' }
+sp-blockchain = { path = '../../../../primitives/blockchain', version = '4.0.0-dev' }
+sp-consensus = { path = '../../../../primitives/consensus/common', version = '0.10.0-dev' }
+sp-consensus-babe = { path = '../../../../primitives/consensus/babe', version = '0.10.0-dev' }
+sp-core = { path = '../../../../primitives/core', version = '6.0.0' }
+sp-keystore = { path = '../../../../primitives/keystore', version = '0.12.0' }
+sp-runtime = { path = '../../../../primitives/runtime', version = '6.0.0' }
 thiserror = '1.0'
 
 [dev-dependencies]
-sc-consensus = { version = '0.10.0-dev', path = '../../../consensus/common' }
-sc-keystore = { version = '4.0.0-dev', path = '../../../keystore' }
+sc-consensus = { path = '../../../consensus/common', version = '0.10.0-dev' }
+sc-keystore = { path = '../../../keystore', version = '4.0.0-dev' }
 serde_json = '1.0.79'
-sp-keyring = { version = '6.0.0', path = '../../../../primitives/keyring' }
-substrate-test-runtime-client = { version = '2.0.0', path = '../../../../test-utils/runtime/client' }
+sp-keyring = { path = '../../../../primitives/keyring', version = '6.0.0' }
+substrate-test-runtime-client = { path = '../../../../test-utils/runtime/client', version = '2.0.0' }
 tempfile = '3.1.0'

@@ -11,10 +11,10 @@ readme = 'README.md'
 publish = false
 
 [dependencies]
-frame-election-provider-support = { version = '4.0.0-dev', path = '../../election-provider-support', features = ['runtime-benchmarks'] }
+frame-election-provider-support = { features = ['runtime-benchmarks'], path = '../../election-provider-support', version = '4.0.0-dev' }
 honggfuzz = '0.5'
-pallet-bags-list = { version = '4.0.0-dev', features = ['fuzz'], path = '..' }
-rand = { version = '0.8', features = ['std', 'small_rng'] }
+pallet-bags-list = { features = ['fuzz'], path = '..', version = '4.0.0-dev' }
+rand = { features = ['std', 'small_rng'], version = '0.8' }
 
 [[bin]]
 name = 'bags-list'

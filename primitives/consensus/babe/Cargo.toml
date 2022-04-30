@@ -13,22 +13,22 @@ readme = 'README.md'
 targets = ['x86_64-unknown-linux-gnu']
 
 [dependencies]
-async-trait = { version = '0.1.50', optional = true }
-codec = { package = 'parity-scale-codec', version = '3.0.0', default-features = false }
-merlin = { version = '2.0', default-features = false }
-scale-info = { version = '2.0.1', default-features = false, features = ['derive'] }
-serde = { version = '1.0.136', features = ['derive'], optional = true }
-sp-api = { version = '4.0.0-dev', default-features = false, path = '../../api' }
-sp-application-crypto = { version = '6.0.0', default-features = false, path = '../../application-crypto' }
-sp-consensus = { version = '0.10.0-dev', optional = true, path = '../common' }
-sp-consensus-slots = { version = '0.10.0-dev', default-features = false, path = '../slots' }
-sp-consensus-vrf = { version = '0.10.0-dev', path = '../vrf', default-features = false }
-sp-core = { version = '6.0.0', default-features = false, path = '../../core' }
-sp-inherents = { version = '4.0.0-dev', default-features = false, path = '../../inherents' }
-sp-keystore = { version = '0.12.0', default-features = false, path = '../../keystore', optional = true }
-sp-runtime = { version = '6.0.0', default-features = false, path = '../../runtime' }
-sp-std = { version = '4.0.0', default-features = false, path = '../../std' }
-sp-timestamp = { version = '4.0.0-dev', path = '../../timestamp', optional = true }
+async-trait = { optional = true, version = '0.1.50' }
+codec = { default-features = false, package = 'parity-scale-codec', version = '3.0.0' }
+merlin = { default-features = false, version = '2.0' }
+scale-info = { default-features = false, features = ['derive'], version = '2.0.1' }
+serde = { features = ['derive'], optional = true, version = '1.0.136' }
+sp-api = { default-features = false, path = '../../api', version = '4.0.0-dev' }
+sp-application-crypto = { default-features = false, path = '../../application-crypto', version = '6.0.0' }
+sp-consensus = { optional = true, path = '../common', version = '0.10.0-dev' }
+sp-consensus-slots = { default-features = false, path = '../slots', version = '0.10.0-dev' }
+sp-consensus-vrf = { default-features = false, path = '../vrf', version = '0.10.0-dev' }
+sp-core = { default-features = false, path = '../../core', version = '6.0.0' }
+sp-inherents = { default-features = false, path = '../../inherents', version = '4.0.0-dev' }
+sp-keystore = { default-features = false, optional = true, path = '../../keystore', version = '0.12.0' }
+sp-runtime = { default-features = false, path = '../../runtime', version = '6.0.0' }
+sp-std = { default-features = false, path = '../../std', version = '4.0.0' }
+sp-timestamp = { optional = true, path = '../../timestamp', version = '4.0.0-dev' }
 
 [features]
 default = ['std']

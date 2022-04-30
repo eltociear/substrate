@@ -9,42 +9,42 @@ description = 'BEEFY Client gadget for substrate'
 homepage = 'https://substrate.io'
 
 [dependencies]
-beefy-primitives = { version = '4.0.0-dev', path = '../../primitives/beefy' }
-codec = { version = '3.0.0', package = 'parity-scale-codec', features = ['derive'] }
+beefy-primitives = { path = '../../primitives/beefy', version = '4.0.0-dev' }
+codec = { features = ['derive'], package = 'parity-scale-codec', version = '3.0.0' }
 fnv = '1.0.6'
 futures = '0.3'
 futures-timer = '3.0.1'
 hex = '0.4.2'
 log = '0.4'
 parking_lot = '0.12.0'
-prometheus = { version = '0.10.0-dev', package = 'substrate-prometheus-endpoint', path = '../../utils/prometheus' }
-sc-chain-spec = { version = '4.0.0-dev', path = '../../client/chain-spec' }
-sc-client-api = { version = '4.0.0-dev', path = '../api' }
-sc-finality-grandpa = { version = '0.10.0-dev', path = '../../client/finality-grandpa' }
-sc-keystore = { version = '4.0.0-dev', path = '../keystore' }
-sc-network = { version = '0.10.0-dev', path = '../network' }
-sc-network-gossip = { version = '0.10.0-dev', path = '../network-gossip' }
-sc-utils = { version = '4.0.0-dev', path = '../utils' }
-sp-api = { version = '4.0.0-dev', path = '../../primitives/api' }
-sp-application-crypto = { version = '6.0.0', path = '../../primitives/application-crypto' }
-sp-arithmetic = { version = '5.0.0', path = '../../primitives/arithmetic' }
-sp-blockchain = { version = '4.0.0-dev', path = '../../primitives/blockchain' }
-sp-consensus = { version = '0.10.0-dev', path = '../../primitives/consensus/common' }
-sp-core = { version = '6.0.0', path = '../../primitives/core' }
-sp-keystore = { version = '0.12.0', path = '../../primitives/keystore' }
-sp-mmr-primitives = { version = '4.0.0-dev', path = '../../primitives/merkle-mountain-range' }
-sp-runtime = { version = '6.0.0', path = '../../primitives/runtime' }
+prometheus = { package = 'substrate-prometheus-endpoint', path = '../../utils/prometheus', version = '0.10.0-dev' }
+sc-chain-spec = { path = '../../client/chain-spec', version = '4.0.0-dev' }
+sc-client-api = { path = '../api', version = '4.0.0-dev' }
+sc-finality-grandpa = { path = '../../client/finality-grandpa', version = '0.10.0-dev' }
+sc-keystore = { path = '../keystore', version = '4.0.0-dev' }
+sc-network = { path = '../network', version = '0.10.0-dev' }
+sc-network-gossip = { path = '../network-gossip', version = '0.10.0-dev' }
+sc-utils = { path = '../utils', version = '4.0.0-dev' }
+sp-api = { path = '../../primitives/api', version = '4.0.0-dev' }
+sp-application-crypto = { path = '../../primitives/application-crypto', version = '6.0.0' }
+sp-arithmetic = { path = '../../primitives/arithmetic', version = '5.0.0' }
+sp-blockchain = { path = '../../primitives/blockchain', version = '4.0.0-dev' }
+sp-consensus = { path = '../../primitives/consensus/common', version = '0.10.0-dev' }
+sp-core = { path = '../../primitives/core', version = '6.0.0' }
+sp-keystore = { path = '../../primitives/keystore', version = '0.12.0' }
+sp-mmr-primitives = { path = '../../primitives/merkle-mountain-range', version = '4.0.0-dev' }
+sp-runtime = { path = '../../primitives/runtime', version = '6.0.0' }
 thiserror = '1.0'
 wasm-timer = '0.2.5'
 
 [dev-dependencies]
-sc-consensus = { version = '0.10.0-dev', path = '../consensus/common' }
-sc-network-test = { version = '0.8.0', path = '../network/test' }
+sc-consensus = { path = '../consensus/common', version = '0.10.0-dev' }
+sc-network-test = { path = '../network/test', version = '0.8.0' }
 serde = '1.0.136'
-sp-finality-grandpa = { version = '4.0.0-dev', path = '../../primitives/finality-grandpa' }
-sp-keyring = { version = '6.0.0', path = '../../primitives/keyring' }
-sp-tracing = { version = '5.0.0', path = '../../primitives/tracing' }
-strum = { version = '0.23', features = ['derive'] }
-substrate-test-runtime-client = { version = '2.0.0', path = '../../test-utils/runtime/client' }
+sp-finality-grandpa = { path = '../../primitives/finality-grandpa', version = '4.0.0-dev' }
+sp-keyring = { path = '../../primitives/keyring', version = '6.0.0' }
+sp-tracing = { path = '../../primitives/tracing', version = '5.0.0' }
+strum = { features = ['derive'], version = '0.23' }
+substrate-test-runtime-client = { path = '../../test-utils/runtime/client', version = '2.0.0' }
 tempfile = '3.1.0'
 tokio = '1.15'

@@ -18,20 +18,20 @@ codec = { package = 'parity-scale-codec', version = '3.0.0' }
 lazy_static = '1.4.0'
 lru = '0.7.5'
 parking_lot = '0.12.0'
-sc-executor-common = { version = '0.10.0-dev', path = 'common' }
-sc-executor-wasmi = { version = '0.10.0-dev', path = 'wasmi' }
-sc-executor-wasmtime = { version = '0.10.0-dev', path = 'wasmtime', optional = true }
-sp-api = { version = '4.0.0-dev', path = '../../primitives/api' }
-sp-core = { version = '6.0.0', path = '../../primitives/core' }
-sp-core-hashing-proc-macro = { version = '5.0.0', path = '../../primitives/core/hashing/proc-macro' }
-sp-externalities = { version = '0.12.0', path = '../../primitives/externalities' }
-sp-io = { version = '6.0.0', path = '../../primitives/io' }
-sp-panic-handler = { version = '4.0.0', path = '../../primitives/panic-handler' }
-sp-runtime-interface = { version = '6.0.0', path = '../../primitives/runtime-interface' }
-sp-tasks = { version = '4.0.0-dev', path = '../../primitives/tasks' }
-sp-trie = { version = '6.0.0', path = '../../primitives/trie' }
-sp-version = { version = '5.0.0', path = '../../primitives/version' }
-sp-wasm-interface = { version = '6.0.0', path = '../../primitives/wasm-interface' }
+sc-executor-common = { path = 'common', version = '0.10.0-dev' }
+sc-executor-wasmi = { path = 'wasmi', version = '0.10.0-dev' }
+sc-executor-wasmtime = { optional = true, path = 'wasmtime', version = '0.10.0-dev' }
+sp-api = { path = '../../primitives/api', version = '4.0.0-dev' }
+sp-core = { path = '../../primitives/core', version = '6.0.0' }
+sp-core-hashing-proc-macro = { path = '../../primitives/core/hashing/proc-macro', version = '5.0.0' }
+sp-externalities = { path = '../../primitives/externalities', version = '0.12.0' }
+sp-io = { path = '../../primitives/io', version = '6.0.0' }
+sp-panic-handler = { path = '../../primitives/panic-handler', version = '4.0.0' }
+sp-runtime-interface = { path = '../../primitives/runtime-interface', version = '6.0.0' }
+sp-tasks = { path = '../../primitives/tasks', version = '4.0.0-dev' }
+sp-trie = { path = '../../primitives/trie', version = '6.0.0' }
+sp-version = { path = '../../primitives/version', version = '5.0.0' }
+sp-wasm-interface = { path = '../../primitives/wasm-interface', version = '6.0.0' }
 tracing = '0.1.29'
 wasmi = '0.9.1'
 
@@ -41,12 +41,12 @@ env_logger = '0.9'
 hex-literal = '0.3.4'
 paste = '1.0'
 regex = '1.5.5'
-sc-runtime-test = { version = '2.0.0', path = 'runtime-test' }
-sc-tracing = { version = '4.0.0-dev', path = '../tracing' }
-sp-maybe-compressed-blob = { version = '4.1.0-dev', path = '../../primitives/maybe-compressed-blob' }
-sp-runtime = { version = '6.0.0', path = '../../primitives/runtime' }
-sp-state-machine = { version = '0.12.0', path = '../../primitives/state-machine' }
-substrate-test-runtime = { version = '2.0.0', path = '../../test-utils/runtime' }
+sc-runtime-test = { path = 'runtime-test', version = '2.0.0' }
+sc-tracing = { path = '../tracing', version = '4.0.0-dev' }
+sp-maybe-compressed-blob = { path = '../../primitives/maybe-compressed-blob', version = '4.1.0-dev' }
+sp-runtime = { path = '../../primitives/runtime', version = '6.0.0' }
+sp-state-machine = { path = '../../primitives/state-machine', version = '0.12.0' }
+substrate-test-runtime = { path = '../../test-utils/runtime', version = '2.0.0' }
 tracing-subscriber = '0.2.19'
 wat = '1.0'
 

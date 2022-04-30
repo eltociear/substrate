@@ -13,25 +13,25 @@ readme = 'README.md'
 targets = ['x86_64-unknown-linux-gnu']
 
 [dependencies]
-codec = { package = 'parity-scale-codec', version = '3.0.0', default-features = false, features = ['derive'] }
-frame-benchmarking = { version = '4.0.0-dev', default-features = false, path = '../../benchmarking' }
-frame-election-provider-support = { version = '4.0.0-dev', default-features = false, path = '../../election-provider-support' }
-frame-support = { version = '4.0.0-dev', default-features = false, path = '../../support' }
-frame-system = { version = '4.0.0-dev', default-features = false, path = '../../system' }
-pallet-bags-list = { version = '4.0.0-dev', default-features = false, features = ['runtime-benchmarks'], path = '../../bags-list' }
-pallet-nomination-pools = { version = '1.0.0', default-features = false, path = '../', features = ['runtime-benchmarks'] }
-pallet-staking = { version = '4.0.0-dev', default-features = false, features = ['runtime-benchmarks'], path = '../../staking' }
-scale-info = { version = '2.0.1', default-features = false, features = ['derive'] }
-sp-runtime = { version = '6.0.0', default-features = false, path = '../../../primitives/runtime' }
-sp-staking = { version = '4.0.0-dev', default-features = false, path = '../../../primitives/staking' }
-sp-std = { version = '4.0.0', default-features = false, path = '../../../primitives/std' }
+codec = { default-features = false, features = ['derive'], package = 'parity-scale-codec', version = '3.0.0' }
+frame-benchmarking = { default-features = false, path = '../../benchmarking', version = '4.0.0-dev' }
+frame-election-provider-support = { default-features = false, path = '../../election-provider-support', version = '4.0.0-dev' }
+frame-support = { default-features = false, path = '../../support', version = '4.0.0-dev' }
+frame-system = { default-features = false, path = '../../system', version = '4.0.0-dev' }
+pallet-bags-list = { default-features = false, features = ['runtime-benchmarks'], path = '../../bags-list', version = '4.0.0-dev' }
+pallet-nomination-pools = { default-features = false, features = ['runtime-benchmarks'], path = '../', version = '1.0.0' }
+pallet-staking = { default-features = false, features = ['runtime-benchmarks'], path = '../../staking', version = '4.0.0-dev' }
+scale-info = { default-features = false, features = ['derive'], version = '2.0.1' }
+sp-runtime = { default-features = false, path = '../../../primitives/runtime', version = '6.0.0' }
+sp-staking = { default-features = false, path = '../../../primitives/staking', version = '4.0.0-dev' }
+sp-std = { default-features = false, path = '../../../primitives/std', version = '4.0.0' }
 
 [dev-dependencies]
-pallet-balances = { version = '4.0.0-dev', default-features = false, path = '../../balances' }
-pallet-staking-reward-curve = { version = '4.0.0-dev', path = '../../staking/reward-curve' }
-pallet-timestamp = { version = '4.0.0-dev', path = '../../timestamp' }
-sp-core = { version = '6.0.0', path = '../../../primitives/core' }
-sp-io = { version = '6.0.0', path = '../../../primitives/io' }
+pallet-balances = { default-features = false, path = '../../balances', version = '4.0.0-dev' }
+pallet-staking-reward-curve = { path = '../../staking/reward-curve', version = '4.0.0-dev' }
+pallet-timestamp = { path = '../../timestamp', version = '4.0.0-dev' }
+sp-core = { path = '../../../primitives/core', version = '6.0.0' }
+sp-io = { path = '../../../primitives/io', version = '6.0.0' }
 
 [features]
 default = ['std']

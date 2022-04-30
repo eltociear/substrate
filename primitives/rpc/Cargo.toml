@@ -14,8 +14,8 @@ targets = ['x86_64-unknown-linux-gnu']
 
 [dependencies]
 rustc-hash = '1.1.0'
-serde = { version = '1.0.136', features = ['derive'] }
-sp-core = { version = '6.0.0', path = '../core' }
+serde = { features = ['derive'], version = '1.0.136' }
+sp-core = { path = '../core', version = '6.0.0' }
 
 [dev-dependencies]
 serde_json = '1.0.79'

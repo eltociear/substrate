@@ -16,9 +16,9 @@ targets = ['x86_64-unknown-linux-gnu']
 [dependencies]
 codec = { package = 'parity-scale-codec', version = '3.0.0' }
 log = '0.4.16'
-sc-allocator = { version = '4.1.0-dev', path = '../../allocator' }
-sc-executor-common = { version = '0.10.0-dev', path = '../common' }
-sp-runtime-interface = { version = '6.0.0', path = '../../../primitives/runtime-interface' }
-sp-sandbox = { version = '0.10.0-dev', path = '../../../primitives/sandbox' }
-sp-wasm-interface = { version = '6.0.0', path = '../../../primitives/wasm-interface' }
+sc-allocator = { path = '../../allocator', version = '4.1.0-dev' }
+sc-executor-common = { path = '../common', version = '0.10.0-dev' }
+sp-runtime-interface = { path = '../../../primitives/runtime-interface', version = '6.0.0' }
+sp-sandbox = { path = '../../../primitives/sandbox', version = '0.10.0-dev' }
+sp-wasm-interface = { path = '../../../primitives/wasm-interface', version = '6.0.0' }
 wasmi = '0.9.1'

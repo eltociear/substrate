@@ -17,7 +17,7 @@ targets = ['x86_64-unknown-linux-gnu']
 honggfuzz = '0.5.49'
 num-bigint = '0.2'
 primitive-types = '0.11.1'
-sp-arithmetic = { version = '5.0.0', path = '..' }
+sp-arithmetic = { path = '..', version = '5.0.0' }
 
 [[bin]]
 name = 'biguint'

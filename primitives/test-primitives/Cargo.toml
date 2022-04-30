@@ -12,12 +12,12 @@ publish = false
 targets = ['x86_64-unknown-linux-gnu']
 
 [dependencies]
-codec = { package = 'parity-scale-codec', version = '3.0.0', default-features = false, features = ['derive'] }
-parity-util-mem = { version = '0.11.0', default-features = false, features = ['primitive-types'] }
-serde = { version = '1.0.136', optional = true, features = ['derive'] }
-sp-application-crypto = { version = '6.0.0', default-features = false, path = '../application-crypto' }
-sp-core = { version = '6.0.0', default-features = false, path = '../core' }
-sp-runtime = { version = '6.0.0', default-features = false, path = '../runtime' }
+codec = { default-features = false, features = ['derive'], package = 'parity-scale-codec', version = '3.0.0' }
+parity-util-mem = { default-features = false, features = ['primitive-types'], version = '0.11.0' }
+serde = { features = ['derive'], optional = true, version = '1.0.136' }
+sp-application-crypto = { default-features = false, path = '../application-crypto', version = '6.0.0' }
+sp-core = { default-features = false, path = '../core', version = '6.0.0' }
+sp-runtime = { default-features = false, path = '../runtime', version = '6.0.0' }
 
 [features]
 default = [
